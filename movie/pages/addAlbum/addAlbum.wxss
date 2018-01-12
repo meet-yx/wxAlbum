@@ -1,0 +1,71 @@
+/* pages/addAlbum/addAlbum.wxss */
+.addAlbum{
+  margin: 0 10px;
+  font-size: 14px; 
+  letter-spacing: 0.1em;
+  color: #333;
+}
+.albumInput{
+  overflow: hidden;
+}
+
+.newInput{
+  border-bottom: 1px solid rgb(196, 196, 196); 
+  padding: 10px;
+  width: 84%; 
+  float: left;
+  border-radius: 3px 0 0 3px;
+}
+.numCount{
+  width: 10%; 
+  height: 26px;
+  line-height: 30px;
+  border-radius: 0 3px 3px 0;
+  float: left;
+  text-align: center;
+  border-bottom: 1px solid rgb(196, 196, 196); 
+  padding: 10px 0;
+}
+.btnAdd{
+  margin: 20px 0;
+  font-size: 14px;
+  height: 35px;
+  background-color: rgb(196, 196, 196);
+  color: #fff;
+}
+.btnChange{
+  margin: 20px 0;
+  font-size: 14px;
+  height: 35px;
+  background-color: #fffb88;
+  color: #333;
+}
+
+/*===========标签名称=============  */
+.tagTitle{
+  display: flex;
+  justify-content:space-between;
+
+}
+.tagName{
+  position: relative;
+}
+.tag1,.tag2{
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 0;
+}
+.TagOringal{
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 3px 2px;
+  margin: 10px;
+}
+.TagChange{
+  border: 1px solid #fffb88;
+  border-radius: 8px;
+  padding: 3px 2px;
+  margin: 10px;
+  background-color:#fffb88; 
+}

@@ -1,0 +1,34 @@
+<!--pages/addAlbum/addAlbum.wxml-->
+<view class='addAlbum'>
+  <!--相册名称input框  -->
+  <view>
+    <view class='albumInput'>
+      <input bindinput='nameInput' bindblur='resTag' class='newInput' value='{{tagName}}' placeholder='新相册名称' placeholder-style='color: rgb(196, 196, 196);' maxlength='16'></input>
+      <view>
+        <text class='numCount'>{{inputCount}}/16</text>
+      </view>
+    </view>
+    <button class="{{isChecked?'btnChange':'btnAdd'}}" bindtap='addAlbum'>确认</button>
+  </view>
+  <!-- ========标签======== -->
+  <view>
+    <view class='tagTitle'>
+      <view>
+        <text style='color:rgb(196, 196, 196)'>直接选一个名称吧</text>
+      </view>
+      <view>
+        <text class='iconfont icon-shuaxin' bindtap='changTag'>换一批</text>
+      </view>
+
+    </view>
+    <view class='tagName'>
+    <view animation="{{animationtag1Big}}" animation="{{animationtag1Small}}" class='tag1'  hidden='{{show1}}'>
+      <view wx:for='{{tag1}}' wx:key='id' data-num="{{item.id}}" bindtap='getTag' class="{{item.id==currentItemId?'TagChange':'TagOringal'}}" >#{{item.name}}</view>
+    </view>
+    <view class='tag2' hidden='{{show2}}'>
+      <view wx:for='{{tag2}}' wx:key='id' data-num="{{item.id}}" bindtap='getTag' class="{{item.id==currentItemId?'TagChange':'TagOringal'}}" >#{{item.name}}</view>
+    </view>
+    </view>
+    
+  </view>
+</view>

@@ -1,0 +1,46 @@
+{
+  "pages": [
+    
+    "pages/home/home",
+    "pages/details/details",
+    "pages/addAlbum/addAlbum",
+    "pages/user/user",
+    "pages/clock/clock",
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/template/template1",
+    "pages/uploadImg/uploadImg"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "流年相册",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#333",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "相册",
+        "iconPath": "images/img.png",
+        "selectedIconPath": "images/img_yellow.png"
+      },
+      {
+        "pagePath": "pages/clock/clock",
+        "text": "时刻",
+        "iconPath": "images/clock.png",
+        "selectedIconPath": "images/clock_yellow.png",
+        "selectedColor": "#000"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_yellow.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+/* pages/user/user.wxss */
+.user{
+  color: #333;
+}
+.userHead{
+  width: 100%;
+  font-size: 24rpx;
+  position: relative;
+}
+.userHead>image{
+  width: 100%;
+}
+.userHead>image::after{
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.38); 
+  width: 100%;
+  height: 100%;
+}
+.userImg{
+  position: absolute;
+  top: 80rpx;
+  left:42%;
+  color: white;
+  text-align: center;
+}
+.userImg>image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+}
+
+
+.imageCount{
+   position: absolute; 
+  bottom:60rpx;
+  left: 22%;
+  width: 60%;
+  height: 100rpx;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.imageCount>view{
+  text-align: center;
+}
+.imageCount>view>view:first-child{
+  font-size: 32rpx;
+}
+.line{
+  width: 0;
+  height: 40rpx;
+  border: 1px solid #fff;
+  
+}
+.addG{
+  text-align: center;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #feff31;
+  border-radius: 40rpx;
+  margin: 100rpx auto;
+}

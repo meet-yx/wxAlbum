@@ -1,0 +1,38 @@
+<!--pages/home/home.wxml-->
+<view class='home'>
+  <view class='box'></view>
+  <!--搜索框  -->
+  <view class='header'>
+    <view class='search'>
+      <view class='searchIcon'>
+        <icon type="search" size="12"></icon>
+      </view>
+      <input class='searchInput' type='text' placeholder-class='searchHolder' placeholder='点击输入相册名称搜索' />
+    </view>
+  </view>
+
+  <view class='content'>
+    <!--相册显示  -->
+    <import src='../template/template1' />
+    <block wx:for="{{albumList}}" wx:key="">
+    <template is="album" data="{{...item}}"></template>
+    
+      
+    </block>
+    <!--没有相册时显示的内容  -->
+    <!-- <view class='kong'>
+      <view>
+        <image src='../../images/上传图片.png'></image>
+      </view>
+      <text>总有美好的时刻让你记住 从新建第一个相册开始</text>
+    </view> -->
+
+  </view>
+  <!--创建相册按钮 -->
+  <view class='build'> 
+  <navigator url="/pages/addAlbum/addAlbum" ><button class='iconfont icon-plus btnBuild' bindtap='addAlbum'>创建相册</button></navigator>
+    
+    <view class='box'></view>
+  </view>
+
+</view>

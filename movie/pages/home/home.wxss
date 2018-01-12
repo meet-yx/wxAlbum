@@ -1,0 +1,73 @@
+/* pages/home/home.wxss */
+.home{
+  font-size: 24rpx;
+  letter-spacing: 0.1em;
+  color: #868686;
+}
+.box{
+  height: 72rpx;
+}
+/*=========搜索框========  */
+.header{
+   position: fixed; 
+   width:100%;
+   top: 0;
+   z-index: 20;
+   background-color: #fff;
+}
+.search{
+  margin: 10rpx 20rpx;
+  overflow: hidden;
+}
+.searchIcon{
+  width: 10%; 
+  height: 52rpx;
+  line-height: 60rpx;
+  border-radius: 6rpx 0 0 6rpx;
+  float: left;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.searchInput{
+   width: 90%; 
+  /* margin: 5px; */
+  background-color: #f0f0f0;
+  float: right;
+  border-radius: 0 3px 3px 0;
+}
+.searchHolder{
+  font-size: 12px;
+}
+/*================中间内容==============  */
+.content{
+  position: relative;
+}
+/*=========没有相册时显示========  */
+.kong{
+  text-align: center;
+  width:46%;
+  margin: 38% auto; 
+
+}
+.kong>view{
+  margin: 60rpx 0;
+}
+.kong image{
+  width: 140rpx;
+  height: 100rpx;
+}
+.kong text{
+  line-height: 2em;
+
+}
+/*=========创建相册========  */
+.btnBuild{
+  font-size: 16px;
+  color: #fff;
+  position: fixed; 
+  bottom: 0;
+  height: 70rpx;
+  width: 100%;
+  border-radius:0; 
+  background-color: #000000;
+}

@@ -1,0 +1,52 @@
+<!--pages/details/details.wxml-->
+<view>
+  <!--相册封面  -->
+  <view class='header'>
+    <view class='details'>
+      <image src='{{detailsSrc}}'></image>
+      <view>
+        <!--返回相册  -->
+        <view class='returnBox' bindtap='returnAlbum'>
+          <view>
+            <text class='return'>返回相册</text>
+          </view>
+        </view>
+
+        <!--上传按钮  -->
+        <view class='btnUpload' bindtap='uploadImg'>
+          <view>
+            <text class='iconfont icon-shangchuantupian uploadIcon'></text>
+            <view><text class='uploadtext'>上传</text></view>
+          </view>
+        </view>
+
+        <text class='title'>{{detailsTitle}}</text>
+        <view class='count'>
+          <text class='iconfont icon-yonghuzu'></text>
+          <text>{{userCount}}</text>
+          <text class='iconfont icon-llalbumicon'></text>
+          <text>{{imgCount}}</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+  <!--照片墙  -->
+  <view class='content'>
+    <!-- <view>
+    <view><image></image> <text>用户名</text></view>
+    <view><text>3小时前</text></view>
+    </view> -->
+    <view>
+      <import src="../template/template1" />
+      <!-- <view class='switch'>
+        <switch color='#fffb88' bindchange='swith1'></switch>
+      </view> -->
+      <view class='imgList' wx:for="{{detailsInfo}}" wx:key="item.l_id">
+        <template is="imgTime" data="{{data:item}}">
+
+        </template>
+      </view>
+    </view>
+  </view>
+</view>

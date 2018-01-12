@@ -1,0 +1,10 @@
+/* pages/clock/clock.wxss */
+.waterfull image{
+  border-radius: 2px;
+}
+.imgList{
+  width: 48%;
+  margin: 1%;
+  display: inline-block;
+  vertical-align: top;
+}

@@ -1,0 +1,39 @@
+<template name="album">
+  <view class='album'>
+    <navigator url="/pages/details/details?id={{a_id}}">
+      <image src='{{a_thumbnail}}'></image>
+    </navigator>
+    <view>
+      <text class='iconfont icon-shoucang collection'></text>
+      <text class='title'>{{a_name}}</text>
+      <!-- <view class='count'>
+        <text class='iconfont icon-yonghuzu'></text>
+        <text>{{userCount}}</text>
+        <text class='iconfont icon-llalbumicon'></text>
+        <text>{{imgCount}}</text>
+      </view> -->
+    </view>
+  </view>
+</template>
+
+<template name="imgTime">
+  <view class='imgTime'>
+  <!--事件  -->
+    <view class='time'>
+      <view>
+        <text>{{data[0].l_date}}</text>
+      </view>
+    </view>
+
+    <!--图片  -->
+    <view class='imglist'>
+    <view wx:for="{{data}}"><image bindtap='clickImg' mode='aspectFill' src='{{item.l_imgPath}}'></image></view>
+    <!-- <view><image mode='aspectFill' src='../../images/waterfull/lomo1.jpg'></image></view>
+    <view ><image mode='aspectFill' src='../../images/waterfull/lomo1.jpg'></image></view>
+    <view><image mode='aspectFill' src='../../images/waterfull/lomo1.jpg'></image></view>
+    <view><image mode='aspectFill' src='../../images/waterfull/lomo1.jpg'></image></view>
+    <view><image mode='aspectFill' src='../../images/waterfull/lomo1.jpg'></image></view>
+    <view><image mode='aspectFill' src='../../images/waterfull/lomo1.jpg'></image></view> -->
+    </view>
+  </view>
+</template>
